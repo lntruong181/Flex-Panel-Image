@@ -1,6 +1,7 @@
 # Flex-Panel-Image
 
-Flex Image is a project working with flex which is extend image when you clicked 
+Flex Image is a project working with flex which is extend image when you clicked !
+
 it's still have a problem with transition but overall it ok
 ![Capture](https://user-images.githubusercontent.com/72255700/128118287-431d7ff6-23c4-4792-bc66-05389adea239.PNG)
 Click on center image*
