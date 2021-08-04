@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="panels">
+        <div class="panel panel1">
+            <p>hey</p>
+            <p>let's</p>
+            <p>dance</p>
+
+        </div>
+    
+        <div class="panel panel2">
+            <p>give</p>
+            <p>take</p>
+            <p>receive</p>
+
+        </div>
+        <div class="panel panel3">
+            <p>experience</p>
+            <p>it</p>
+            <p>today</p>
+
+        </div>
+        <div class="panel panel4">
+            <p>give</p>
+            <p>all</p>
+            <p>you can</p>
+            
+
+        </div>
+        <div class="panel panel5">
+            <p>life</p>
+            <p>in</p>
+            <p>motion</p>
+        </div>
+    </div>
+</body>
+
+<script>
+    const panels = document.querySelectorAll('.panel')
+    panels.forEach(panel => panel.addEventListener('click',handleFormOpen))
+    panels.forEach(panel => panel.addEventListener('transitionend',handleTextOpen))
+    
+    function handleFormOpen(e){
+        this.classList.toggle('panel-open')
+        console.log(e.target)
+    }
+    function handleTextOpen(e){
+        if(e.propertyName.includes('flex')){
+            this.classList.toggle('text-open')
+        }
+    }
+</script>
+</html>
